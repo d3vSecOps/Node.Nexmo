@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Nexmo SMS</title>
+  <meta name="description" content="Nexmo SMS">
+  <meta name="author" content="Allan O. Alex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Noto+Sans">
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/Style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Send Message</h1>
+    <img class="logo" src="Images/nexmo-white.png">
+  </header>
+
+  <section id="main" role="main">
+    <p class="intro">Enter a number, begins with a country code</p>
+    <form>
+      <input type="tel" name="number" placeholder="" required>
+      <input type="text" name="text" placeholder="Hello">
+      <input type="button" value="Send SMS">
+    </form>
+  </section>
+
+  <p class="response"></p>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="Js/Application.js"></script>
+
+</body>
+</html>
